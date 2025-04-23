@@ -40,6 +40,20 @@ func main() {
 go get github.com/yourusername/volt
 ```
 
+## Developing
+
+```bash
+go mod tidy
+```
+- It ensures that your go.mod file includes all the necessary dependencies for your project.
+- It removes any unused dependencies from go.mod.
+- It generates or updates the go.sum file with checksums for all required modules (both direct and indirect).
+
+```bash
+go run ./cmd/volt
+```
+- For development, this is the most common and efficient approach for running the project.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
